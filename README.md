@@ -157,6 +157,23 @@ MIT
 - **お問い合わせ** (`/contact`): 実用的な問い合わせフォーム
 - **このサイトについて** (`/about`): 運営者情報、サイトの目的、免責事項
 
+### Google AdSense
+このサイトはGoogle AdSenseを実装しています。
+- **パブリッシャーID**: ca-pub-7907240934096694
+- **実装方法**: `app/layout.tsx`に自動広告スクリプトを配置
+- **広告コンポーネント**: `app/components/AdBanner.tsx`で再利用可能な広告コンポーネントを提供
+
+#### 広告の配置方法
+
+任意のページで広告を表示する場合：
+
+```tsx
+import AdBanner from "@/app/components/AdBanner";
+
+// ページ内で使用
+<AdBanner adSlot="あなたの広告スロットID" />
+```
+
 ### アフィリエイト情報
 このアプリケーションはAmazonアソシエイト・プログラムに参加しています。
 - **アソシエイトID**: zebradance-22
